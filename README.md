@@ -2,6 +2,8 @@
 
 A small Windows utility that restores broken thumbnails, avatars, and icons in Roblox by resolving `tr.rbxcdn.com` to a working IP address and patching the system `hosts` file.
 
+Repository: https://github.com/Abrikosikkk/Fix-Icons-Roblox
+
 ---
 
 ## The Problem
@@ -40,23 +42,25 @@ No third-party Python packages are needed. The script uses only the standard lib
 
 ## Installation
 
-Option 1 — Run from source:
+Option 1 — Clone the repository:
 
-    git clone https://github.com/<your-username>/fix_iconsroblox.git
-    cd fix_iconsroblox
-    python fix_iconsroblox.py
+    git clone https://github.com/Abrikosikkk/Fix-Icons-Roblox.git
+    cd Fix-Icons-Roblox
+    python fix_icons_roblox.py
 
-Option 2 — Download the raw script:
+Option 2 — Download the raw script directly:
 
-Download `fix_iconsroblox.py` from this repository and save it anywhere, for example on your Desktop.
+    https://github.com/Abrikosikkk/Fix-Icons-Roblox/blob/main/fix_icons_roblox.py
+
+Save it anywhere on your machine, for example on your Desktop.
 
 ---
 
 ## Usage
 
-Right-click `fix_iconsroblox.py` and choose "Run as administrator", or open an elevated Command Prompt or PowerShell and run:
+Right-click `fix_icons_roblox.py` and choose "Run as administrator", or open an elevated Command Prompt or PowerShell and run:
 
-    python fix_iconsroblox.py
+    python fix_icons_roblox.py
 
 The script will print environment info (target domain, hosts path, DNS servers), resolve the current IP for `tr.rbxcdn.com`, patch the `hosts` file, and flush the DNS cache.
 
@@ -65,7 +69,7 @@ After that, fully close Roblox (including the system tray icon) and relaunch it.
 Example output:
 
       ┌─────────────────────────────────────────────┐
-      │  fix_iconsroblox.py                         │
+      │  fix_icons_roblox.py                        │
       │  Roblox CDN Resolver · v1.0                 │
       └─────────────────────────────────────────────┘
 
